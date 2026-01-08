@@ -1,11 +1,12 @@
 var Person = {
     name:"Ali",
     func:function (){
-        var self = this
-         newfunc = () => {
-            console.log(self.name);
+        const f = () => {
+            console.log(this.name);
+            
         }
-        newfunc()
+        f()
         }
 }
+
 Person.func()
